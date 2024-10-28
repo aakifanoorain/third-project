@@ -1,0 +1,732 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    justify-content: space-between;
+}
+
+
+
+.ham-icon {
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+.ham-icon input[type="checkbox"] {
+    appearance: none;
+}
+
+
+.menu {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    color: black;
+}
+
+.menu a {
+    color: rgb(77, 74, 74);
+    text-decoration: none;
+    padding: 0px 2px;
+}
+
+.menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: rgb(139, 139, 139);
+    transition: width .3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+Hamburger menu icon / .menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 15px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.menu-icon .bar {
+    height: 3px;
+    width: 30px;
+    background: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+Navigation menu / .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #333;
+    z-index: 0;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 5em;
+
+}
+
+#menu-toggle {
+    display: none;
+}
+
+i.bx.bx-home {
+    font-size: 21px;
+}
+
+.item a {
+    text-decoration: none;
+    color: gray;
+}
+
+.item a:hover {
+    color: rgb(243, 26, 26);
+}
+
+.menu i {
+    color: gray;
+
+}
+
+.menu i:hover {
+    color: red;
+
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.item {
+    position: relative;
+
+}
+
+ul.dropdown {
+    width: 150px;
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 2px solid rgb(121, 119, 119);
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.item:hover .dropdown,
+.dropdown:hover {
+    display: block;
+}
+
+ul.dropdown li {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+}
+
+ul.dropdown li a {
+    text-decoration: none;
+    color: rgb(124, 120, 120);
+}
+
+ul.dropdown li a:hover {
+    color: rgb(68, 67, 67);
+}
+
+ul.dropdown {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.item:hover .dropdown,
+.dropdown:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hero video {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 50px;
+
+}
+
+.bannar img {
+    width: 100%;
+    height: 100%;
+}
+
+.head1 h1 {
+    font-size: 8rem;
+    font-family: "Playfair Display", serif;
+    border-color: rgb(66, 66, 66);
+    color: rgb(107, 25, 25);
+    text-align: center;
+
+    position: absolute;
+    left: 41%;
+}
+
+
+.head2 h1 {
+    font-size: 5rem;
+    font-family: "Playfair Display", serif;
+    border-color: rgb(66, 66, 66);
+    color: rgb(107, 25, 25);
+    text-align: center;
+    position: absolute;
+    left: 38%;
+
+}
+
+.head3 h1 {
+    text-align: center;
+    position: absolute;
+    left: 42%;
+    background: linear-gradient(to right, violet, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+
+.head4 img {
+    width: 100%;
+}
+
+.head4 h1 {
+    font-size: 6rem;
+    font-weight: 100;
+    font-family: "Quicksand", sans-serif;
+    color: rgb(128, 127, 127);
+    text-align: center;
+    position: absolute;
+    left: 40%;
+}
+
+.container h3 {
+    color: rgb(61, 30, 30);
+    background-color: rgb(228, 211, 143);
+    width: 55%;
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container p {
+    color: rgb(196, 128, 51);
+    font-family: "Playwrite AU VIC";
+}
+
+.container .mycard1 {
+    position: relative;
+    max-width: 300px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .mycard1 .img1 {
+    position: relative;
+    display: flex;
+
+    width: 260px;
+    height: 260px;
+    top: -73px;
+    left: 7px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .mycard1 .img1 img {
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+
+}
+
+.container .mycard1 .detail1 {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .mycard1:hover .detail1 {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+    font-size: 46px;
+    color: rgb(253, 8, 8);
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.about img {
+width: 100%;
+    object-fit: cover;
+}
+
+.about p {
+    width: 60%;
+    color: rgb(105, 104, 104);
+    font-size: 19px;
+    line-height: 35px;
+    font-family: "Playwrite AU VIC";
+}
+
+.shakes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.shakes h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 46px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    color: rgb(225 27 27);
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.shakes img {
+    width: 40%;
+    height: 10%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.shakes p {
+    width: 60%;
+    color: rgb(105, 104, 104);
+    font-size: 23px;
+    line-height: 80px;
+    font-family: "Playwrite AU VIC";
+}
+
+
+.content {
+    width: 50%;
+    height: 40vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgb(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.content:hover {
+    opacity: 1;
+}
+
+.content h1 {
+    font-size: 45px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.headed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 31px;
+}
+
+.headed h1 {
+    font-family: "Bungee Tint", sans-serif;
+
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    color: rgb(225 27 27);
+    padding: 25px;
+    font-size: 65px;
+}
+
+
+.collection1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.collection2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.collection3 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.collection4 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.collection5 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.collection6 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pop {
+    width: 30%;
+    background-color: rgb(244, 236, 236);
+    border: 36px solid floralwhite;
+    transition: transform 1s;
+    color: honeydew;
+}
+
+.pop:hover {
+    transform: scale(0.9);
+    box-shadow: 10px 10px 20px rgb(184, 120, 157);
+
+}
+
+.pop1 img {
+    width: 5%;
+    height: 10%;
+}
+
+.pop1 {
+    padding: 8% 10%;
+    object-fit: cover;
+    width: 100%;
+    height: 5%;
+}
+
+.container-a {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    line-height: 25px;
+}
+
+
+.heading h5 {
+    text-align: center;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-style: italic;
+    color: red;
+
+    font-size: 45px;
+    margin: 50px;
+}
+
+.container-a p {
+    color: rgb(121, 41, 54);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 30px;
+    margin: 35px;
+
+
+}
+
+.shakes h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    color: rgb(225 27 27);
+    padding: 25px;
+    font-size: 46px;
+}
+
+.contents {
+    padding: 3rem;
+    color: rgb(241, 25, 25);
+    font-family: "Playfair Display", serif;
+}
+
+.para {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(104, 101, 101);
+}
+
+.contents h1 {
+    font-size: 45px;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+.para .para1,
+.para2,
+.para3 {
+    line-height: 30px;
+    font-family: "Playwrite AU VIC";
+
+}
+
+.para p {
+    font-family: "Playwrite AU VIC";
+}
+
+.i {
+
+    display: flex;
+    justify-content: center;
+}
+
+.i img {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    background: linear-gradient(to bottom, #fcfcfd, #df1414);
+    color: #fff;
+    padding-inline-start: 100px 0 30px;
+    border-top-right-radius: 125px;
+    font-size: 13px;
+    list-style: 20px;
+}
+
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col img {
+    width: 70%;
+    margin-top: 19%;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 30%;
+}
+
+.col h3 {
+    width: fit-content;
+    color: rgb(49, 48, 48);
+    font-family: "Platypi", serif;
+
+    font-weight: 100;
+    font-style: normal;
+    font-size: 21px;
+    padding-top: 20px;
+
+}
+
+.col ul li {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 19px;
+
+}
+
+.col ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.col ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.social-icon {
+    width: 150px;
+    text-align: center;
+
+}
+
+.social-icon i {
+    padding: 10px;
+    width: 23%;
+    font-size: 27px;
+}
+
+
+
+.social-icon h3 {
+    margin-bottom: 30px;
+    padding-top: 35px;
+    color: rgb(49, 48, 48);
+    font-family: "Platypi", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 21px;
+}
+
+.col ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.col li {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.col a {
+    text-decoration: none;
+    color: #f6f7f8;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+
+}
+
+.col a::after {
+
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: black;
+    transition: width .3s;
+
+}
+
+.col a:hover::after {
+    width: 100%;
+
+}

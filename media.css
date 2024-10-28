@@ -1,0 +1,284 @@
+@media only screen and (min-width:300px) and (max-width:480px) {
+    img.heading {
+        width: 28%;
+        height: 20%;
+    }
+
+    .head1 h1 {
+        font-size: 3rem;
+        position: absolute;
+        left: 38%;
+    }
+
+    .head2 h1 {
+        font-size: 23px;
+        left: 35%;
+    }
+
+    .head3 h1 {
+
+        position: absolute;
+        left: 36%;
+        font-size: 31px;
+
+    }
+
+    .head4 h1 {
+        font-size: 2rem;
+        position: absolute;
+        left: 40%;
+    }
+
+    .col h3 {
+
+        font-size: 15px;
+        padding-top: 13px;
+    }
+
+
+
+    .col ul li {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 19px;
+    }
+
+    .col ul li {
+        list-style: none;
+        margin-bottom: -7px;
+    }
+
+    .row {
+        width: 100%;
+        align-items: center;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+  flex-wrap: wrap;
+
+    }
+    .col{
+        flex-basis: 100%;
+    }
+    .col1{
+        width: 100vw;
+    }
+    .col1 img{
+        width: 200px;
+    }
+
+    .col ul li a {
+        font-size: 12px;
+    }
+
+    .para {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .headed h1 {
+
+        font-size: 50px;
+    }
+
+    .i img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .collection4 {
+
+        margin-top: 2em;
+
+    }
+
+    .collection3 {
+
+        margin-top: 2em;
+
+    }
+
+    .contents {
+        padding: 0rem;
+        font-size: 15px;
+    }
+
+    .container-a p {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .shakes img {
+        width: 96%;
+    }
+
+    .shakes p {
+        line-height: 28px;
+        font-size: 16px;
+    }
+
+    .about p {
+        width: 83%;
+        font-size: 15px;
+        line-height: 25px;
+
+    }
+
+    .pop {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (min-width:481px) and (max-width:780px) {
+    .head1 h1 {
+        font-size: 5rem;
+        left: 39%;
+    }
+
+    .pop {
+
+        width: 40%;
+
+    }
+
+
+    .container-a p {
+
+        font-size: 24px;
+        margin: 13px;
+    }
+
+    .col ul li a {
+
+        font-size: 10px;
+    }
+
+    .head2 h1 {
+        font-size: 2rem;
+        left: 37%;
+    }
+
+    .head3 h1 {
+        left: 39%;
+        font-size: 3rem;
+
+    }
+
+    .head4 h1 {
+        font-size: 4rem;
+        position: absolute;
+        left: 40%;
+    }
+
+    .collection3 {
+
+        margin-top: 30px;
+    }
+
+    .collection4 {
+
+        margin-top: 30px;
+    }
+
+    .collection2 {
+        width: 100%;
+    }
+
+    .shakes img {
+        width: 55%;
+
+    }
+
+    .collection6 {
+
+        margin-top: 20px;
+    }
+
+    .para {
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .social-icon i {
+        padding: 3px;
+        width: 20%;
+        font-size: 23px;
+    }
+}
+
+@media only screen and (min-width:781px) and (max-width:1024px) {
+    .col ul li a {
+
+        font-size: 16px;
+    }
+
+    .collection3 {
+
+        margin-top: 3%;
+    }
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 1200px) {
+
+
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px 0 10px 10px;
+        justify-content: space-between;
+    }
+
+    .heading {
+        order: 1;
+    }
+
+    .menu {
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.7rem;
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .ham-icon {
+        display: block;
+        order: 2;
+    }
+
+    i.fa-solid.fa-x {
+        display: none;
+    }
+
+    .fa-x,
+    .fa-bars {
+        color: black;
+        font-size: 1.7rem;
+    }
+
+
+
+    .navbar:has(input[type="checkbox"]:checked) .menu {
+        margin-top: 1rem;
+        height: 270px;
+    }
+
+    .navbar:has(input[type="checkbox"]:checked) .fa-bars {
+        display: none;
+    }
+
+    .navbar:has(input[type="checkbox"]:checked) .fa-x {
+        display: inline-block;
+    }
+}
