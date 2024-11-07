@@ -31,7 +31,7 @@
 
     .col h3 {
 
-        font-size: 15px;
+        font-size: 32px;
         padding-top: 13px;
     }
 
@@ -48,33 +48,48 @@
         margin-bottom: -7px;
     }
 
+
     .row {
         width: 100%;
-        align-items: center;
         margin: auto;
         display: flex;
         justify-content: space-between;
-  flex-wrap: wrap;
+        flex-wrap: wrap;
+        flex-direction: column;
 
     }
-    .col{
+
+    .social-icon h3 {
+
+        font-size: 28px;
+    }
+
+    .social-icon i {
+        padding: 0px;
+        font-size: 38px;
+    }
+
+    .col {
         flex-basis: 100%;
     }
-    .col1{
+
+    .col1 {
         width: 100vw;
     }
-    .col1 img{
+
+    .col1 img {
         width: 200px;
     }
 
     .col ul li a {
-        font-size: 12px;
+        font-size: 22px;
     }
 
     .para {
         display: flex;
         flex-direction: column;
-
+        font-size: 19px;
+        gap: 5px;
     }
 
     .headed h1 {
@@ -147,16 +162,35 @@
 
     }
 
+    .row {
+
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-start; */
+        justify-content: space-between;
+    }
 
     .container-a p {
 
         font-size: 24px;
         margin: 13px;
+
+    }
+
+    .col h3 {
+
+        font-size: 40px;
+    }
+
+
+    .social-icon h3 {
+
+        font-size: 28px;
     }
 
     .col ul li a {
 
-        font-size: 10px;
+        font-size: 24px;
     }
 
     .head2 h1 {
@@ -203,7 +237,10 @@
     .para {
         padding: 1rem;
         flex-direction: column;
+        font-size: 20px;
+        gap: 15px;
     }
+
 
     .social-icon i {
         padding: 3px;
@@ -215,12 +252,32 @@
 @media only screen and (min-width:781px) and (max-width:1024px) {
     .col ul li a {
 
-        font-size: 16px;
+        font-size: 25px;
     }
 
     .collection3 {
 
         margin-top: 3%;
+    }
+
+    .col h3 {
+
+        font-size: 28px;
+    }
+
+    .social-icon h3 {
+
+        font-size: 27px;
+    }
+
+    .social-icon i {
+        padding: 0px;
+        font-size: 40px;
+    }
+
+    .col img {
+        width: 100%;
+        margin-top: 19%;
     }
 }
 
@@ -235,8 +292,31 @@
         justify-content: space-between;
     }
 
+    .col ul li a {
+        font-size: 25px;
+    }
+
     .heading {
         order: 1;
+    }
+
+    .col h3 {
+
+        font-size: 30px;
+    }
+
+    .social-icon h3 {
+        font-size: 28px;
+    }
+
+    .social-icon i {
+        padding: 0px;
+        font-size: 41px;
+    }
+
+    .col img {
+        width: 100%;
+        margin-top: 20%;
     }
 
     .menu {
